@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sayfa Başlığı</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+    <button id="button-login">Log in</button>
+    <button id="button-register">Register</button>
+
+    <div class="container">
+        <div class="text-container">
+            <div class="textarea-container">
+                <textarea id="text-area"></textarea>
+            </div>
+            <div class="div-container">
+                <div id="loadingSpin" style="display:none;">
+                    <img src="loading.gif" alt="Loading">
+                  </div>
+                <div class="inner-div""></div>
+            </div>
+        </div>
+        <h3>Keywords and Phrases </h3>
+        <div class="keys">
+        </div>
+        <div class="button-container">
+            <button id="my-button">Değeri Al</button>
+        </div>
+        <div class="prev-docs"></div>
+      </div>
+
+            <!-- modal -->
+        <div class="modal">
+            <!-- modal içerik -->
+            <div class="modal-content">
+            <!-- modal başlık -->
+            <div class="modal-header">
+                <h2>Log in</h2>
+                <!-- modal kapatma butonu -->
+                <span class="close">&times;</span>
+            </div>
+            <!-- modal gövde -->
+            <div class="modal-body">
+                <form action="#">
+                    <!-- kullanıcı adı input -->
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <!-- şifre input -->
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <!-- giriş butonu -->
+                    <button id="login" type="submit">Log in</button>
+                  </form> 
+                  <!-- yeni kullanıcı ekle -->
+        
+            </div>
+            <!-- modal alt bilgi -->
+<!--             <div class="modal-footer">
+                <p>Modal footer information goes here.</p>
+            </div> -->
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal2">
+            <div class="modal-content2">
+            <div class="modal-header2">
+                <h2>Register</h2>
+                <span class="close2">&times;</span>
+            </div>
+            <!-- modal gövde -->
+            <div class="modal-body2">
+                <form class="form2">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username2" name="username"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password2" name="password"><br>
+                    <label for="passwordConfirm">Password Confirm:</label><br>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm"><br><br>
+                    <button type="submit" id="registerButton">Register</button>
+                  </form>
+            </div>
+            </div>
+        </div>
+        
+      <script src="index.js"></script>
+  </body>
+</html>
