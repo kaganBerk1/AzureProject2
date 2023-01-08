@@ -15,7 +15,7 @@ except mysql.connector.Error as err:
   else:
     print(err)
 
-hostName = "localhost"
+hostName = ""
 serverPort = 8080
 
 class MyServer(BaseHTTPRequestHandler):
